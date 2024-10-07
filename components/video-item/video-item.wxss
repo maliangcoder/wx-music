@@ -1,0 +1,54 @@
+/* components/video-item/video-item.wxss */
+.item {
+    margin-bottom: 30rpx;
+}
+
+.album {
+    position: relative;
+    border-radius: 12rpx;
+    overflow: hidden;
+    display: flex;
+}
+
+.album .image {
+    width: 100%;
+}
+
+.info {
+    position: absolute;
+    padding: 0 10rpx;
+    box-sizing: border-box;
+    width: 100%;
+    bottom: 8rpx;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    font-size: 24rpx;
+}
+
+.info .count {
+    padding-left: 36rpx;
+    position: relative;
+}
+
+.info .count::before {
+    content: "";
+    position: absolute;
+    left: -2rpx;
+    top: 4rpx;
+    width: 30rpx;
+    height: 24rpx;
+    background-size: cover;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAOdJREFUOE+NUwsOgzAIfZxs82RuJ1NPxgR5BLGaNVmySnmf8ioYLFX9AHgBeEd5BbDt+1VE7H8uqZtonAF862FVNSD7eU1EjMBXAkQzavFG3eKNIlMCUDI/kvEOrJJJHF5kP03GYsX8muSTbzunqmo9BJjJHsX0GL6nDpIqVNU8nViqRCrslxffZ1PwCBCKOIGt3ovboJfBOE8TCaIhgCnoBb8DY/vHQh5uU+D2Ep6wdeShjqQBMMqXCbBnVz4RwLPfR/kQpLTdw2Osw+B0ewS/e0yewLjIlbl4fEyFgS+vPmeC1YR6yw/OT8b3fykxrwAAAABJRU5ErkJggg==');
+}
+
+.cotent {
+    margin-top: 10rpx;
+    font-size: 28rpx;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}

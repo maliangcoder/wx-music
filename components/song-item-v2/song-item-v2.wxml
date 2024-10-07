@@ -1,0 +1,12 @@
+<!--components/song-item-v2/song-item-v2.wxml-->
+<view class="item" bind:tap="onSongItemTap">
+	<view class="index">{{ index }}</view>
+	<view class="info">
+		<view>{{ itemData.name }}</view>
+		<view class="source">
+			<van-icon class="icon" name="audio" />
+			<text>{{ itemData.ar[0].name }}</text>
+		</view>
+
+	</view>
+</view>

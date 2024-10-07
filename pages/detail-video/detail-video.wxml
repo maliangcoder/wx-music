@@ -1,0 +1,5 @@
+<video class="video" src="{{mvUrl}}" danmu-list="{{ danmuList }}" />
+<view class="video-info">
+	<view>{{ mvInfo.artistName }}</view>
+	<view>{{ mvInfo.name }}</view>
+</view>
